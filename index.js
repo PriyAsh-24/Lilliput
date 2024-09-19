@@ -32,7 +32,7 @@ app.get('/url/:shortId',async (req,res)=>{
     },{
         $push : {
             visitedHistory : {
-                timestamp : Date.now()
+                timestamp : Date.now() 
             }
         }
     })
