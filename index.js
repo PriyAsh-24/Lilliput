@@ -10,8 +10,8 @@ const userRoute=require('./routes/user');
 const URL=require("./models/url");
 const { connectToMongoDB }=require('./connection');
 
-const app=express();
-const PORT=8001;
+const app = express();
+const PORT = 8001;
 
 connectToMongoDB('mongodb://localhost:27017/short-url').then(()=> console.log("MongoDb Connected"));
 
